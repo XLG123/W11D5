@@ -33,7 +33,7 @@ export const createPokemon = data => async dispatch => {
   }
 };
 
-export const editPokemon = data => async dispatch => {
+export const updatePokemon = data => async dispatch => {
   const response = await fetch(`/api/pokemon/${data.id}`, {
     method: 'put',
     headers: {
